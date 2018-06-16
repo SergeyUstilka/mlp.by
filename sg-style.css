@@ -1,0 +1,854 @@
+/* Siargei Ustsilka
+https://vk.com/sg_one
+2018  for mlp.by
+*/
+/*------------------------- SG styles ----------------------------------------*/
+
+@font-face {
+  font-family: '11525';
+  src: url('../fonts/11525.eot');
+  src: url('../fonts/11525.woff2') format('woff2'),
+       url('../fonts/11525.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LifeIsStrangeRU';
+  src: url('../fonts/LifeIsStrangeRU.woff') format('woff'),
+       url('../fonts/LifeIsStrangeRU.ttf') format('truetype'),
+       url('../fonts/LifeIsStrangeRU.svg#LifeIsStrangeRU') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Common styles*/
+.storefront-featured-products, .storefront-on-sale-products, .storefront-best-selling-products{display: none;}
+body{
+/*    background-image: url(../images/bg-paper-tile.jpg)!important;
+*/    background-position: left top!important;
+    background-size: auto!important;
+    background-repeat: repeat!important;
+    background-attachment: scroll!important;
+}
+
+h1, h2, h3, .widget-title, .product-categories li a{
+    font-family: 'LifeIsStrangeRU';
+}
+.br-free br{
+  display: none;
+}
+
+.seo-link{
+  display: inline-block;
+  font-size: 26px;
+  font-family: 'LifeIsStrangeRU';
+  color: #9f7ab5!important;
+  text-decoration: underline;
+}
+.invers{
+  color: #ffafbd!important;
+}
+.blog-img{
+  max-width: 150px;
+  float: right;
+  padding: 15px;
+  display: inline-block;
+}
+.single-post h2{
+  clear: none;
+  margin-top: 20px;
+}
+.galery{
+  text-align: center;
+}
+.galery br{display: none;}
+  .galery a{
+    display: inline-block;
+    max-width: 200px;
+    vertical-align: top;
+    margin-right: 20px;
+  }
+  .galery a img{
+    width: 100%;
+  }
+.post-template-default h3{
+  margin-top: 30px;
+}
+#site-header-cart {
+  background-image: url(../images/box-bg-bottom.png), url(../images/box-bg-br.png), url(../images/box-bg-tl.png);
+      background-position: center bottom, right bottom, left top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 23px, auto, auto;
+  position: absolute;
+    top: -165px;
+    right: 0;
+}
+.cart-contents{
+  color: #43454b!important;
+}
+.site-header-cart .cart-contents:after{
+  display: none;
+}
+#site-header-cart:before {
+  background-image: url(../images/corner-tl.png), url(../images/corner-tr.png);
+      position: absolute;
+    content: '';
+    top: -7px;
+    left: -5px;
+    right: -4px;
+    height: 8px;
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    display: none;
+}
+#site-header-cart:after {
+  background-image: url(../images/corner-bl.png), url(../images/corner-br.png);
+  position: absolute;
+    content: '';
+    bottom: -7px;
+    left: -5px;
+    right: -4px;
+    height: 8px;
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    display: none;
+}
+#site-header-cart li:first-child{
+    background-image: url(../images/box-bg-flower-bl.png), url(../images/box-bg-flower-tr.png);
+    background-position: left bottom, right top;
+    text-align: center;
+    background-repeat: no-repeat, no-repeat;
+    border: 1px solid #eebbca;
+    min-height: 60px;
+    padding: 0px 30px 0px;
+    border:none;
+}
+#site-header-cart li:first-child h3{
+  color: #ed6487;
+}
+.woocommerce-products-header__title{
+  text-align: center;
+  font-size: 4em;
+}
+header{
+	 background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top!important;
+}
+
+.woocommerce-breadcrumb{
+  font-family: 'LifeIsStrangeRU';
+    margin: 30px 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+.product .onsale{
+  background-color: #ffc7df;
+    color: #fff;
+    border: none;
+    position: relative;
+    top:auto;
+    right: auto;
+}
+.woocommerce-loop-product__link .onsale{
+  position: absolute;
+    top: -29px;
+    right: -22px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffc7df;
+    color: #fff;
+    padding: 31px 2px;
+    transform: rotate(15deg);
+    font-family: 'LifeIsStrangeRU'; 
+}
+
+#page>header{ 
+    background-image: url(../images/header-bg4-sml-flowers.png)!important;
+    background-repeat: no-repeat!important;
+}
+  .post-type-archive-product .woocommerce-breadcrumb{
+    display: none;
+  }
+  .post-type-archive-product #content{
+    margin-top:50px;
+  }
+
+.site-header{
+	border:none!important;
+}
+.site-search{
+	display: none;
+}
+#logo{
+	text-align: center;
+    max-width: 300px;
+    margin: 15px auto;
+
+}
+#logo img{
+	width: 100%;
+}
+#top-contact{
+  display: inline-block;
+  float: right;
+  max-width: 500px;  
+}
+.site-branding{display: none!important;}
+.storefront-primary-navigation{
+	position: relative;
+    box-sizing: border-box;
+    background-image: url(../images/ribbon-tile.png);
+    background-position: center;
+	background-size: calc(100% - 274px);
+    min-height: 68px;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+}
+.storefront-primary-navigation:before, .storefront-primary-navigation:after{
+	display: block;
+    position: absolute;
+    content: '';
+    min-height: 75px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    top:0;
+    z-index: -1;
+}
+#site-navigation{
+	z-index: 11;
+	    margin-top: 10px;
+    padding-left: 40px;
+    font-family: 'LifeIsStrangeRU';
+
+}
+.storefront-primary-navigation:before{
+	background-image: url(../images/menu-ribbon-left.png);
+	left: -120px;
+}
+.storefront-primary-navigation:after{
+	background-image: url(../images/menu-ribbon-right.png);
+	right: -120px;
+}
+#menu-top-menu li a{
+	font-family: 'LifeIsStrangeRU';
+	font-size: 23px;
+	padding: 7px 20px;
+}
+.site-header ul.menu li.current-menu-item > a{
+      color: #ed6487;
+}
+
+#site-header-cart a{
+	font-family: 'LifeIsStrangeRU';
+}
+#site-header-cart a.cart-contents {
+	padding-top: 0px;
+}
+#site-header-cart a  .amount{
+	font-size: 1.5em!important;
+}
+#site-header-cart a  .count{
+	font-size: 1.1em!important;
+}
+#site-header-cart li:nth-child(2) div{
+  background: #fff;
+  font-family: 'LifeIsStrangeRU';
+}
+.woocommerce-product-search{
+  position: relative;
+}
+.woocommerce-product-search:after{
+  content: '';
+    position: absolute;
+    background-image: url(../images/search-box.png);
+    background-repeat: no-repeat;
+    width: 123%;
+    height: 153%;
+    background-size: 100%;
+    display: block;
+    left: -21px;
+    top: -14px;
+    z-index: -1;
+
+}
+.woocommerce-product-search input{
+  background: #fff!important;
+  border:none;
+  border-radius: 4px;
+  font-family: 'LifeIsStrangeRU';
+      font-size: 16px;
+    padding: 7px 43px;
+}
+.cat-item-15{display: none!important;}
+.widget_product_categories{
+  position: relative;
+}
+.widget_product_categories:before{
+  background-image: url(../images/side-bar-line-v.png);
+    height: 100%;
+    width: 5px;
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    content: '';
+}
+.add_to_cart_button, .single_add_to_cart_button, .wc-forward, .wpcf7-submit, .button, .btn, #submit{
+  background-image: url(../images/banner-flag-sml-left.png), url(../images/banner-flag-sml-right.png), url(../images/banner-flag-sml-tile.png)!important;
+  background-repeat: no-repeat, no-repeat, no-repeat!important;
+    background-position: left top, right top, center top!important;
+    background-clip: border-box, border-box, padding-box!important;
+    background-origin: border-box, border-box, padding-box!important;
+    background-size: 10px 100%, 10px 100%, 100% 100%!important;
+    border-left: 10px solid transparent!important;
+    border-right: 10px solid transparent!important;
+    color: #FFFFFF!important;
+    background-color: rgba(0,0,0,0)!important;
+    border-color: rgba(0,0,0,0)!important;
+
+}
+.add_to_cart_button:hover, .single_add_to_cart_button:hover, .wc-forward:hover, .wpcf7-submit:hover, .button:hover, .btn, #submit{
+  background-color: rgba(0,0,0,0)!important;
+/*  border:none!important;
+*/  color: #fff;
+
+}
+.pagination .page-numbers li .page-numbers.current, .woocommerce-pagination .page-numbers li .page-numbers.current{
+  background-color: #9f7ab5!important;
+  color: #fff!important;
+}
+#payment .place-order .button{
+  font-size: 20px!important;
+}
+.woocommerce-message ,.woocommerce-info{
+  background-image: url(../images/banner-flag-right.png), url(../images/banner-flag-tile.png), url(../images/banner-flag-left.png);
+  background-position: right top, right top, left top;
+    background-repeat: no-repeat, repeat-x, no-repeat;
+    background-origin: border-box, padding-box, border-box;
+    background-clip: border-box, padding-box, border-box;
+    height: 69px;
+    background-color: transparent;
+    border-left: 42px solid transparent;
+    border-right: 42px solid transparent;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    display: table;
+    line-height: 54px;
+    font-size: 23px;
+    font-family: 'LifeIsStrangeRU';
+    margin: 20px 0 20px 0;
+}
+.widget_shopping_cart_content{
+    border:2px solid #ffc7df!important;
+  
+}
+  .woocommerce-mini-cart-item{
+    background-color: #fff;
+  }
+  .widget_shopping_cart_content p{
+    background: #fff!important;
+  }
+.woocommerce-message a {
+  margin-top:15px;
+}
+footer{
+  background-image: url('../images/footer-flowers.png');
+  background-color: rgba(0,0,0,0)!important; 
+      background-repeat: no-repeat;
+    padding-bottom: 0!important;
+}
+footer .widget_text p{
+  background: rgba(256,256,256,0.8);
+    padding: 15px;
+}
+footer .site-info{
+      padding: 0;
+    margin: 18px 0 0 0;
+    vertical-align: middle;
+}
+.footer-info p{
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+}
+#creator{
+  float: right;
+  width: auto;
+}
+.site-info{display: none;}
+  #creator a{
+    text-decoration: underline;
+  }
+
+.customize-unpreviewable, footer a[rel="author"]{display: none;}
+
+#top-contact{
+  position: absolute;
+  top:82px;
+  left: 0;
+  width: 280px;
+  background-image: url(../images/box3-flowers-bl.png), url(../images/box3-tr.png);
+    background-position: left bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+}
+#top-contact:before {
+    background-image: url(../images/corner-tl.png), url(../images/corner-tr.png);
+    position: absolute;
+    content: '';
+    top: -7px;
+    left: -5px;
+    right: -4px;
+    height: 8px;
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    display: none;
+}
+#top-contact:after {
+    background-image: url(../images/corner-bl.png), url(../images/corner-br.png);
+    position: absolute;
+    content: '';
+    bottom: -7px;
+    left: -5px;
+    right: -4px;
+    height: 8px;
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    display: none;
+}
+  #top-contact div{
+    border: 1px solid #eebbca;
+    border:none;
+    padding: 10px 30px 0px;
+  }
+  #top-contact div p{
+    font-family: 'LifeIsStrangeRU';
+    margin-bottom: 5px;
+  }
+  #top-contact div p br{
+  }
+  #top-contact div p a{
+    color: #ed6487;
+    font-family: 'LifeIsStrangeRU';
+    font-size: 20px;
+}
+  #top-contact div p b{}
+/* Common style end*/
+/*Main page styles*/
+.home{}
+/*
+  .home #post-25{
+    background-image: url(../images/banner-plants.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .home #post-25 p{
+    font-family: 'LifeIsStrangeRU';
+    max-width: 450px;
+    margin:0 auto;
+  }*/
+  .woocommerce-loop-category__title{
+    text-transform: uppercase;
+  }
+  .woocommerce .products{
+    text-align: center;
+  }
+  .blog-title-main-page{
+        background-image: url(../images/under-h1.png), url(../images/behind-h1.png);
+            background-size: 84px 27px, 95% 102px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 56px, left top;
+    min-height: 69px;
+    position: relative;
+    margin-bottom: 60px;
+  }
+/*Main styles end*/
+/*Catalog styles*/
+.product-categories{}
+  .product-categories li{
+    position: relative;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding: 5px 0;
+  }
+
+    .product-categories li a{
+      text-decoration: none;
+      text-transform: uppercase;
+      text-decoration: none!important;
+      display: inline-block;
+      color: #4a4439;
+      font-size: 1.3em;
+    }
+    .product-categories li:last-child {
+      border-bottom: none;
+    }
+  .product-categories li .children{
+    display: none;
+  }
+    .product-categories li a:hover{
+      color: #ed6487;
+
+    }
+    .product-categories>li{
+      padding-left: 0!important;
+      position: relative;
+    }
+    .product-categories>li.cat-parent{
+      padding-right: 35px;
+    }
+    .product-categories li:before{
+
+          content: ''!important;
+    }
+    #secondary #woocommerce_product_categories-2 .widget-title{
+      font-size: 25px;
+    }
+    .mini_cart_item{
+      background-image: none!important;
+      border:none!important;
+      border-bottom: 1px solid rgba(0,0,0,0.2)!important;
+    }
+    .menu-arrow{
+      display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: -1px;
+    top: -7px;
+      background-size: 83%;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      border-radius: 50%;
+      background-image: url(../images/circle-bg-lg.png);
+      padding: 3px 4px;
+    }
+    .menu-arrow span{
+      background-image: url(../images/arrow-right.png);
+    position: absolute;
+    content: '';
+    display: block;
+    left: 6px;
+    top: 6px;
+    background-size: 100%;
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    }
+    .product-categories>li.open .menu-arrow span{
+    background-image: url(../images/arrow-down.png);
+
+    }
+    .product-categories>li{
+      padding-bottom: 0;
+      margin-bottom: 5px;
+    }
+    .product-categories>li.empty:before{
+      display: none;
+    }
+    .product-categories>li>a{
+      border-bottom: 2px solid #9f7ab5
+      width: calc(100% - 40px);
+      font-size: 17px;
+    }
+      .product-categories>li ul{}
+      .product-categories>li ul li{
+        padding-bottom: 5px;
+        border-left: 2px solid rgba(0,0,0,0.1);
+        margin:0;
+        
+      }
+      .product-categories li ul.children li a:first-letter{
+        text-transform: uppercase;
+      }
+      .product-categories li.open ul.children ul{
+        display: block;
+      }
+      .product-categories>li ul li a{
+        text-transform: lowercase;
+        width: 100%;
+      }
+ul.products li.product .woocommerce-LoopProduct-link{
+  min-height: 340px;
+}
+.woocommerce-pagination{
+  margin-top: 15px;
+  width: 100%;
+}
+.woocommerce-ordering select, .form-wppp-select select{
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #9f7ab5;
+  cursor: pointer;
+}      
+.woocommerce-result-count{
+  padding-top: 7px;
+}
+/*Catalog styles end*/
+/*Contact page styles*/
+  #contact{
+      list-style: none;
+    
+  }
+    #contact li{
+      width: 48%;
+      max-width: 480px;
+
+      display: inline-block;
+      vertical-align: top;
+      box-sizing: border-box;
+    }
+    #contact-more{
+      margin-left: 20px;
+      text-align: center;
+      background-image: url(../images/contact-flowers-top.png), url(../images/contact-flowers-bottom.png);
+      position: relative;
+      background-position: center top, center bottom;
+      background-repeat: no-repeat, no-repeat;
+      background-size: 100% auto, 100% auto;
+      padding: 80px 0;
+
+
+    }
+    #contact-more p {
+      font-family: 'LifeIsStrangeRU';
+      font-size: 20px;
+    }
+    #contact-more p a{
+      font-size: 20px;
+      font-family: 'LifeIsStrangeRU';
+      color: #4a4439;
+    }
+    #contact-more h3{
+      margin-top:10px;
+    }
+    #contact form{
+          background-image: url(../images/contact-form-behind.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 413px;
+    padding: 20px 60px;
+    margin: 0 0 40px;
+    }
+      #contact form input{
+        border:none;
+        background: #fff;
+        width: 100%;
+        margin: 5px 0;
+        border-radius: 3px;
+      }
+      #contact form textarea{
+        max-height: 140px;
+        background: #fff;
+        border-radius: 3px;
+      }
+      .social{}
+        .social ul{
+          list-style: none;
+        }
+          .social ul li{
+            font-size: 20px;
+            display: inline-block;
+            background-image: url(../images/circle-bg-lg.png);
+            width: 40px!important;
+            height: 40px;
+            background-position: center;
+            background-size: 100% 100%;
+            padding: 3px 3px 0px 0px;
+            margin-right: 10px;
+          }
+/*Contact page styles end*/
+/*Blog styles*/
+.pt-cv-content{
+  min-height: 170px;
+}
+  .pt-cv-content a.btn{
+    display: block;
+        max-width: 120px;
+    margin: 10px auto;
+  }
+  h4.pt-cv-title{
+    font-family: 'LifeIsStrangeRU';
+    text-align: center;
+    color: #ed6487;
+    font-size: 24px;
+  }
+  .pt-cv-ifield .pt-cv-href-thumbnail{
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    background: #f4f4f4;
+    box-shadow: 0px 0px 18px 2px #d9d9d9;
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  .pt-cv-ifield{
+    text-align: center;
+  }
+  .pt-cv-ifield .pt-cv-href-thumbnail img{
+    position: relative;
+    display: block;
+    background: #FFF;
+    padding: 8px;
+    border: 1px solid #eee;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    margin-bottom: 0!important;
+  }
+  .pt-cv-meta-fields{
+        margin-top: 1.5em;
+    padding: 0.8em 0;
+    margin-bottom: 1em;
+    position: relative;
+    color: #8a8a8a;
+    font-size: 12px;
+    clear: both;
+    text-align: center;
+  }
+  .pt-cv-meta-fields span{
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .pt-cv-meta-fields span a{
+    color: #8a8a8a;
+  }
+  .pt-cv-meta-fields:before{
+    content: '';
+    height: 2px;
+    left: 50px;
+    right: 50px;
+    top: 0;
+    position: absolute;
+    background-image: url(../images/line-thin-left.png), url(../images/line-thin-right.png), url(../images/line-thin-tile.png);
+    background-size: 43px 2px, 65px 2px, 4px 2px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: left top, right top, center top;
+    background-clip: border-box, border-box, padding-box;
+    background-origin: border-box, border-box, padding-box;
+    border-left: 43px solid transparent;
+    border-right: 65px solid transparent;
+  }
+  .pt-cv-meta-fields:after{
+        content: '';
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+     background-image: url(../images/line-thin-left.png), url(../images/line-thin-right.png), url(../images/line-thin-tile.png); 
+    background-size: 43px 2px, 65px 2px, 4px 2px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: left top, right top, center top;
+    background-clip: border-box, border-box, padding-box;
+    background-origin: border-box, border-box, padding-box;
+    border-left: 43px solid transparent;
+    border-right: 65px solid transparent;
+  }
+
+  .post{}
+    .post .entry-meta{
+      width: 100%!important;
+    display: none;
+    }
+    .post .entry-meta div{
+      display: inline-block;
+    }
+    .post .entry-meta div.author img{
+      display: none;
+    }
+  .post .entry-header{
+    border-bottom: none;
+  }
+  .post .entry-content{
+    float: none!important;
+    width: 100%!important;
+  }
+    .post .entry-content img{
+      float: right;
+      width: 200px;
+      margin: 0 0 20px 20px;
+      position: relative;
+      display: block;
+      background: #FFF;
+      padding: 8px;
+      border: 1px solid #eee;
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+          box-shadow: 0px 0px 18px 2px #d9d9d9;
+    }
+    .post #comments{
+  padding-top: 0;
+      
+    }
+.post #comments #respond{
+  padding-top: 0;
+  background:none;
+}
+/*Blog styles end*/
+/*Cart styles*/
+.woocommerce-cart-form{}
+  .woocommerce-cart-form table td, .woocommerce-cart-form table th , .cart_totals table td, .cart_totals table th, #order_review td, #order_review th, #order_review , #payment .payment_methods li, .payment_box, table th, table td, .place-order, .order_details{
+    background-color: transparent!important;
+    border-top-color:transparent!important;
+  }
+  .wc_payment_method {
+    border: 1px solid #9f7ab5;
+    padding: 10px 15px;
+  }
+/*Cart styles end*/
+/*Promo page styles*/
+.actual-promo{
+  display: inline-block;
+  max-width: 300px;
+  width: 100%;
+  margin: 30px 15px;
+  position: relative;
+  text-align: center;
+}
+.actual-promo-content{
+  display: inline-block;
+  background-image: url(../images/circle-border-fern.png);
+  background-position: bottom center;
+      background-repeat: no-repeat;
+    background-size: 100% 100%;
+  padding-bottom: 40px;
+}
+.actual-promo-content p{
+  display: inline-block;
+}
+.actual-promo-content:before{
+}
+.promo-btn{
+  padding: 5px 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 99;
+}
+/*Promo page styles end*/
+/*Adaptive*/
+@media (min-width: 768px){
+  .woocommerce-active .site-header .main-navigation {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .woocommerce-active .site-header .site-header-cart {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 270px;
+  }
+}
